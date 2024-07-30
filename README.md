@@ -1,72 +1,31 @@
-# clean-architecture-pizza
+# Clean Architecture Pizza
 
-This project uses Quarkus, the Supersonic Subatomic Java Framework.
+## Description
+The **Clean Architecture Pizza** repository is a sample application that implements clean architecture principles to manage pizza orders. The goal of the project is to demonstrate how to use clean architecture principles to create a modular, scalable, and maintainable application.
 
-If you want to learn more about Quarkus, please visit its website: <https://quarkus.io/>.
+## Main Technologies Used
+- **Java**
+- **Quarkus** for microservice development
+- **JPA** for data persistence
+- **H2 Database** for local testing
+- **RESTEasy** for creating REST APIs
+- **ModelMapper** for entity and DTO mapping
 
-## Running the application in dev mode
+## Architecture and Design Patterns
+- **Clean Architecture**: Separation of concerns into layers (Domain, Application, Infrastructure)
+- **Dependency Inversion**: Use of interfaces and dependency injection to decouple layers
+- **DTOs**: Use of Data Transfer Objects to transfer data between layers
 
-You can run your application in dev mode that enables live coding using:
+## Key Features
+- **Customer Management**: Create, update, and query customers
+- **Pizza Management**: Create, update, and query pizzas
+- **Order Management**: Create orders, including calculating the total value and validating stock
 
-```shell script
-./mvnw compile quarkus:dev
-```
-
-> **_NOTE:_**  Quarkus now ships with a Dev UI, which is available in dev mode only at <http://localhost:8080/q/dev/>.
-
-## Packaging and running the application
-
-The application can be packaged using:
-
-```shell script
-./mvnw package
-```
-
-It produces the `quarkus-run.jar` file in the `target/quarkus-app/` directory.
-Be aware that it’s not an _über-jar_ as the dependencies are copied into the `target/quarkus-app/lib/` directory.
-
-The application is now runnable using `java -jar target/quarkus-app/quarkus-run.jar`.
-
-If you want to build an _über-jar_, execute the following command:
-
-```shell script
-./mvnw package -Dquarkus.package.jar.type=uber-jar
-```
-
-The application, packaged as an _über-jar_, is now runnable using `java -jar target/*-runner.jar`.
-
-## Creating a native executable
-
-You can create a native executable using:
-
-```shell script
-./mvnw package -Dnative
-```
-
-Or, if you don't have GraalVM installed, you can run the native executable build in a container using:
-
-```shell script
-./mvnw package -Dnative -Dquarkus.native.container-build=true
-```
-
-You can then execute your native executable with: `./target/clean-architecture-pizza-1.0.0-SNAPSHOT-runner`
-
-If you want to learn more about building native executables, please consult <https://quarkus.io/guides/maven-tooling>.
-
-## Related Guides
-
-- REST Jackson ([guide](https://quarkus.io/guides/rest#json-serialisation)): Jackson serialization support for Quarkus REST. This extension is not compatible with the quarkus-resteasy extension, or any of the extensions that depend on it
-
-## Provided Code
-
-### REST
-
-Easily start your REST Web Services
-
-[Related guide section...](https://quarkus.io/guides/getting-started-reactive#reactive-jax-rs-resources)
-
-### RESTEasy JAX-RS
-
-Easily start your RESTful Web Services
-
-[Related guide section...](https://quarkus.io/guides/getting-started#the-jax-rs-resources)
+## How to Run
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/clean-architecture-pizza.git
+   cd clean-architecture-pizza
+   ./mvnw compile quarkus:dev
+   ```
+2. Access the application at http://localhost:8080 or http://127.0.0.1:8080/swagger-ui/index.html
