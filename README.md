@@ -5,21 +5,21 @@ The **Clean Architecture Pizza** repository is a sample application that impleme
 
 ## Main Technologies Used
 - **Java**
-- **Quarkus** for microservice development
-- **JPA** for data persistence
-- **H2 Database** for local testing
-- **RESTEasy** for creating REST APIs
-- **ModelMapper** for entity and DTO mapping
+- **Quarkus** for microservice development.
+- **JPA** for data persistence.
+- **H2 Database** for local testing.
+- **RESTEasy** for creating REST APIs.
+- **ModelMapper** for entity and DTO mapping.
 
 ## Architecture and Design Patterns
-- **Clean Architecture**: Separation of concerns into layers (Domain, Application, Infrastructure)
-- **Dependency Inversion**: Use of interfaces and dependency injection to decouple layers
-- **DTOs**: Use of Data Transfer Objects to transfer data between layers
+- **Clean Architecture**: Separation of concerns into layers (Domain, Application, Infrastructure).
+- **Dependency Inversion**: Use of interfaces and dependency injection to decouple layers.
+- **DTOs**: Use of Data Transfer Objects to transfer data between layers.
 
 ## Key Features
-- **Customer Management**: Create, update, and query customers
-- **Pizza Management**: Create, update, and query pizzas
-- **Order Management**: Create orders, including calculating the total value and validating stock
+- **Customer Management**: Create, update, and query customers.
+- **Pizza Management**: Create, update, and query pizzas.
+- **Order Management**: Create orders, including calculating the total value and validating stock.
 
 ## How to Run
 1. Clone the repository:
